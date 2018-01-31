@@ -4,8 +4,8 @@
 	The current implementation is a wrapper of steem API and the returned values are all in JSON.
 	
 	Next release will be focus on making the lua developer's life easy:
-	1) Convert the JSON string to lua table etc.
-	2) Add some utilities function, for example get post payout, get user's vote power/weight etc.
+	1) Add other unwrapped utility functions.
+	2) Convert the JSON string to lua table etc.
 
 #### Dependences:
 
