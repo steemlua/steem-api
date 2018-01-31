@@ -45,6 +45,8 @@ static void easy_init( CURL** hnd, data_t* chunk )
   curl_easy_setopt(*hnd, CURLOPT_TCP_KEEPALIVE, 1L);
   curl_easy_setopt(*hnd, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
   curl_easy_setopt(*hnd, CURLOPT_WRITEDATA, (void*)chunk);
+  curl_easy_setopt(*hnd, CURLOPT_CONNECTTIMEOUT, 3600); 
+  curl_easy_setopt(*hnd, CURLOPT_TIMEOUT, 3600); //timeout in seconds
   //curl_easy_setopt(*hnd, CURLOPT_VERBOSE, 1);
   
   return;
